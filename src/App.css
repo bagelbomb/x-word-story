@@ -1,38 +1,72 @@
-.App {
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.instructions {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.instructions p {
+  margin: 10px 0;
+}
+
+.story-input-div {
+  margin: 40px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: stretch;
 }
 
-.App-link {
-  color: #61dafb;
+.start-button, .enter-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-button:hover, .enter-button:hover {
+  background-color: #1e2fef;
+  border: 1px solid #1e2fef;
+}
+
+.story-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.stories-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.stories-div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 150px;
+  overflow-y: auto;
+}
+
+.stories-div p {
+  margin: 10px 0;
 }

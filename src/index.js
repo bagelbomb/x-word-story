@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -10,3 +9,9 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// TODO: prevent changing previous parts of the story
+// TODO: save stories to local storage
+// TODO: clear stories
+// TODO: delete stories
+// TODO: add utils with common functions(?)
